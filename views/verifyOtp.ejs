@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <body>
+        <label>Enter your otp here</label>
+        <input type="number" id="optCode" />
+        <button class="btn" onclick="verifyOtpCode()">Verify</button>
+    </body>
+    <script
+        src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+            function verifyOtpCode(){
+                var otpInfo = {
+                    optCode : $('#optCode').val()
+                }
+                $.ajax({
+                    url: '/verifyOtpCode',
+                    method: 'POST',
+                    data: otpInfo,
+                    success: function(res){
+                        if(res.success){
+                            alert(res.message)
+                            window.location.href = '/resetpassword'
+                        }
+                        else{
+                            alert(res.message)
+                        }
+                    },
+                    error: function(err){
+                    
+                    }
+                })
+            }
+        </script>
+</html>

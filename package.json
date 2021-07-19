@@ -1,0 +1,26 @@
+{
+  "name": "node-with-ejs",
+  "version": "1.0.0",
+  "description": "Node practice with EJS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/JeminDangashiya/Node-with-ejs.git"
+  },
+  "author": "Jaimin",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/JeminDangashiya/Node-with-ejs/issues"
+  },
+  "homepage": "https://github.com/JeminDangashiya/Node-with-ejs#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "ejs": "^3.1.6",
+    "ejs-mate": "^3.0.0",
+    "express": "^4.17.1",
+    "nodemailer": "^6.6.3"
+  }
+}
